@@ -1,0 +1,99 @@
+.navbar-btn-spacing .btn {
+    margin-right: 10px; /* Adjust margin to your liking */
+}
+
+.form-control {
+    width: 30%;
+}
+
+.form-select {
+    width: 30%;
+}
+
+select.form-select {
+    width: max-content; /* Adjust the width as needed */
+}
+
+
+.center {
+    display: block; /* Change the display property to block */
+    text-align: center; /* Align text within the block */
+    font-size: 24px;
+}
+
+.mr {
+    padding-left: 1px; /* Adjust the value as needed */
+}
+
+thead {
+    font-size: 20px; /* Increase the font size */
+}
+
+.curve {
+    border-collapse: collapse; /* Combine border edges into a single edge */
+    border-radius: 10px; /* Round the corners */
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+    width: 70%;
+}
+
+.table-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+}
+
+img {
+    background: none; /* Remove background */
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.manage-bar {
+    color: white;
+    font-size: 16px;
+}
+
+.carousel-container {
+    width: 70%; /* Set container width to 50% */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+.carousel-item img {
+    width: 100%; /* Set image width to 100% of the slide */
+    height: 400px; /* Set fixed height for the slides */
+  }
+
+.bold {
+    font-weight: bold;
+}
+
+.caption-bg {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent black background */
+    border-collapse: collapse; /* Combine border edges into a single edge */
+    border-radius: 10px; /* Round the corners */
+  }
+
+.round {
+    border-collapse: collapse; /* Combine border edges into a single edge */
+    border-radius: 10px; /* Round the corners */
+  }
+
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-collapse: collapse; /* Combine border edges into a single edge */
+    border-radius: 10px; /* Round the corners */
+    color:white;
+    width: 70%;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+.main {
+    width: 100%;
+    border-radius: 0px; /* Round the corners */
+    min-height: 85vh;
+}
+
+.head {
+    font-size: 24px;
+}

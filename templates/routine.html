@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+<div class="table-container">
+    <table class="table table-hover curve" border="1">
+        <thead class="table-dark">
+        <tr>
+            <th style="width: 20%;" scope="col">Time Scheduled</th>
+            <th style="width: 35%;" scope="col">Task</th>
+            <th style="width: 20%;" scope="col">XP</th>
+            <th style="width: 25%;" scope="col">Options</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %} 
+
+                {% if task.done == 'yes' %}
+                    <tr class="table-success">
+                        <td>{{ task.starting }} - {{ task.ending }}</td>
+                        <td>{{ task.name }}</td>
+                        <td>+{{ task.diff }}</td>
+                        <td> Success </td>
+                    </tr>
+
+                {% else %}
+                    <tr id="task_{{ task.id }}">
+                        <td>{{ task.starting }} - {{ task.ending }}</td>
+                        <td>{{ task.name }}</td>
+                        <td>+{{ task.diff }}</td>
+                        <td>
+                            <img src="static/green_check.png" alt="Green Check" onclick="done('{{ task.id }}', '{{ task.diff }}')" style="width: 30px; height: auto;">
+                            <img src="static/trash_can.png" onclick="remove_task('{{ task.id }}')" id="trash_can_{{ task.id }}" alt="trash_can" style="width: 30px; height: auto;">
+                        </td>
+                    </tr>
+                {% endif %}
+
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/static/script.js"></script>
+{% endblock %}

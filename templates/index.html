@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+    <div id="carouselExampleCaptions" class="carousel slide carousel-container" data-bs-theme="dark">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="static/carousel_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block caption-bg">
+            <h5 class="bold">Simplifique sua rotina</h5>
+            <p blass="bold">Com o MyRoutine, você controla a sua rotina de maneira divertida e prática, ganhando pontos ao completar as atividades</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/carousel_2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block caption-bg">
+            <h5>Gamifique a sua vida</h5>
+            <p>Com o ranking, disputa contra amigos e todos os outros usuários.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/carousel_3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block caption-bg">
+            <h5>Gerencie suas tasks</h5>
+            <p>Adicione, remova e edite tasks de maneira fácil com o nosso menu simplificado</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="text-center black-bg mt-5">
+        <span class="bold head">Comece agora mesmo </span>
+        <br><br>
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <span class="bold"> Crie a sua conta</span>
+                <br><br>
+                <span> Para criar a sua conta, basta acessar o menu Sign Up e colocar os seus dados</span>
+              </div>
+              <div class="col">
+                <span class="bold"> Monte a sua rotina</span>
+                <br><br>
+                <span> Vá no menu manage e adicione as tasks que você realiza diariamente com o horário e a dificuldade de cada uma, é possível editar ou remover tasks incompletas no dia</span>
+              </div>
+              <div class="col">
+                <span class="bold"> Acumule XP</span>
+                <br><br>
+                <span> Ao completar tarefas, ganhe XP de acordo com a dificuldade selecionada, as tasks resetam diariamente de acordo com o horário de brasília </span>
+              </div>
+            </div>
+          </div>
+
+    </div>
+{% endblock %}
